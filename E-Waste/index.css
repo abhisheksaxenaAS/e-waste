@@ -1,0 +1,209 @@
+/* Reset basic styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #002a54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container img {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heading-name {
+    font-size: 2.5em;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    background-color: #00509e;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #e3f2fd;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#hero h2 {
+    color: #002a54;
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+#hero p {
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Types of E-Waste */
+#types {
+    padding: 40px 20px;
+    background-color: #ffffff;
+}
+
+#types h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #00509e;
+}
+
+.e-waste-type {
+    background-color: #f0f8ff;
+    margin: 10px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 80%;
+}
+
+.e-waste-type h3 {
+    margin-bottom: 10px;
+}
+
+.e-waste-type a {
+    color: #00509e;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.e-waste-type a:hover {
+    text-decoration: underline;
+}
+
+/* Latest News Section */
+#latest-news {
+    background-color: #e1f5fe;
+    padding: 40px 20px;
+}
+
+.news-item {
+    background: white;
+    margin: 15px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+    background: #f4f4f4;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#testimonial-container {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 70%;
+}
+
+/* Footer */
+footer {
+    background-color: #002a54;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-links a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+/* service center  */
+.service-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px;
+}
+
+.service-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    padding: 20px;
+}
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+.service-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-bottom: 3px solid #002a54;
+}
+
+.service-card h3 {
+    margin: 10px 0;
+    color: #002a54;
+}
+
+.service-card p {
+    font-size: 0.9em;
+    margin-bottom: 10px;
+}
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    background-color: #00509e;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #003e73;
+}

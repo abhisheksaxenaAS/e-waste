@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation - E-Waste Management</title>
+    <link rel="stylesheet" href="confirmation.css">
+    <script defer src="work.js"></script>
+</head>
+<body>
+   <!-- Header Section -->
+   <header>
+    <div class="logo-container">
+        <img src="EWRI-Logo-for-site-500x300px.png" alt="Logo" class="logo">
+    </div>
+    <h1 class="heading-name">E-Waste Management System</h1>
+</header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <h2>Order Confirmation</h2>
+        <div id="order-details">
+            <p><strong>Name:</strong> <span id="confirmUserName"></span></p>
+            <p><strong>Type of E-Waste:</strong> <span id="confirmEWasteType"></span></p>
+            <p><strong>Weight:</strong> <span id="confirmWeight"></span> kg</p>
+            <p><strong>Amount:</strong> <span id="confirmAmount"></span> Rs</p>
+            <p><strong>Bank Account:</strong> <span id="confirmAccountNumber"></span></p>
+            <p><strong>IFSC Code:</strong> <span id="confirmIfscCode"></span></p>
+        </div>
+        <button class="new-submission-button" onclick="goToNewSubmission()">Go for New Submission</button>
+    </main>
+
+   <!-- Footer Section -->
+   <footer>
+    <p>&copy; 2024 E-Waste Management System. All Rights Reserved.</p>
+    <div class="footer-links">
+        <a href="#privacy">Privacy Policy</a> |
+        <a href="#terms">Terms of Service</a> |
+        <a href="#contact">Contact Us</a>
+    </div>
+</footer>
+
+    <script>
+        // Fetch data from previous page
+        document.getElementById('confirmUserName').textContent = localStorage.getItem('userName');
+        document.getElementById('confirmEWasteType').textContent = localStorage.getItem('eWasteType');
+        document.getElementById('confirmWeight').textContent = localStorage.getItem('weight');
+        document.getElementById('confirmAmount').textContent = localStorage.getItem('amount');
+        document.getElementById('confirmAccountNumber').textContent = localStorage.getItem('accountNumber');
+        document.getElementById('confirmIfscCode').textContent = localStorage.getItem('ifscCode');
+
+        function goToNewSubmission() {
+            window.location.href = "submission.html";
+        }
+    </script>
+</body>
+</html>

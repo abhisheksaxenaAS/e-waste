@@ -1,0 +1,136 @@
+/* General Body Styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background-color: #002a54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container img {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heading-name {
+    font-size: 2.5em;
+}
+nav ul {
+    list-style: none;
+    background-color: #00509e;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    background-color: #004080;
+    border-radius: 5px;
+}
+
+#submission-form-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+h2 {
+    color: #002a54;
+}
+
+.form-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    width: 50%;
+    padding: 20px;
+}
+
+form label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#image-preview {
+    width: 40%;
+    padding: 20px;
+    text-align: center;
+}
+
+#preview-img {
+    width: 100%;
+    height: auto;
+    max-height: 250px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.btn-submit {
+    background-color: #00509e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.btn-submit:hover {
+    background-color: #004080;
+}
+
+/* Footer */
+footer {
+    background-color: #002a54;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}

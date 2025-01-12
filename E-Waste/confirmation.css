@@ -1,0 +1,95 @@
+/* Reset basic styles */
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+/* header */
+header {
+    background-color: #002a54;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container img {
+    width: 100px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.heading-name {
+    font-size: 2.5em;
+}
+
+/* Main Container */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    text-align: center;
+    color: #004080;
+    margin-bottom: 20px;
+}
+
+#order-details p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+strong {
+    color: #333;
+}
+
+/* Button Styles */
+.new-submission-button {
+    display: block;
+    width: 80%;
+    margin: 20px auto;
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.new-submission-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #002a54;
+    color: white;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+.footer-links a {
+    color: lightgray;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: white;
+    text-decoration: underline;
+}

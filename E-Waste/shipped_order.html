@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipped Order - E-Waste Management</title>
+    <link rel="stylesheet" href="shipped_order.css">
+    <script defer src="shipped_order.js"></script>
+    <script defer src="work.js"></script>
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAERekuUVjllDGYDK3pmuhVqjmxQ8na88" async -->
+    <!-- defer></script> -->
+
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="EWRI-Logo-for-site-500x300px.png" alt="E-Waste Logo" class="logo">
+        </div>
+        <h1 class="heading-name">E-Waste Management System</h1>
+    </header>
+
+
+    <main class="container">
+        <h2>Shipped Order Details</h2>
+        <div class="details-container">
+            <div class="user-details">
+                <h3>User Information</h3>
+                <label for="userName"> <b>Name:</b></label>
+                <input type="text" id="userName" placeholder="Enter your name" required>
+
+                <label for="accountNumberInput"> <b>Bank Account Number:</b></label>
+                <input type="text" id="accountNumberInput" placeholder="Enter your account number" required>
+
+                <label for="ifscCodeInput"> <b>IFSC Code:</b></label>
+                <input type="text" id="ifscCodeInput" placeholder="Enter IFSC Code" required>
+
+                <p><strong>Type of E-Waste:</strong> <span id="eWasteType">Computers</span></p>
+                <p><strong>Weight:</strong> <span id="weight">X</span> kg</p>
+                <p><strong>Amount:</strong> <span id="amount">Y </span> Rs</p>
+            </div>
+
+
+            <div class="map-container">
+                <h3>Current Location</h3>
+                <div id="map">
+                    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAERekuUVjllDGYDK3pmuhVqjmxQ8na88"
+                        async defer></script>
+                </div>
+            </div>
+        </div>
+        <button class="confirm-button" onclick="confirmOrder()">Confirm</button>
+    </main>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 E-Waste Management System. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </div>
+    </footer>
+
+
+</body>
+
+</html>

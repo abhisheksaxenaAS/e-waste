@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit E-Waste</title>
+    <link rel="stylesheet" href="submission.css">
+    <script defer src="submission.js"></script>
+    <script defer src="work.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="EWRI-Logo-for-site-500x300px.png" alt="E-Waste Logo" class="logo">
+        </div>
+        <h1 class="heading-name">E-Waste Management System</h1>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+           
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Services</a></li>
+            
+        </ul>
+    </nav>
+
+    <!-- E-Waste Submission Form -->
+    <section id="submission-form-section">
+        <h2>Submit Your E-Waste</h2>
+        <p>Please fill out the form below to help us manage e-waste responsibly.</p>
+        <div class="form-container">
+            <form id="ewaste-form">
+                <label for="waste-type">Type of E-Waste:</label>
+                <select id="waste-type" name="wasteType" required>
+                    <option value="" disabled selected>Select type</option>
+                    
+                    <option value="Computers">Computers & Accessories</option>
+                   
+                </select>
+
+                <label for="waste-amount">Amount (in quantity):</label>
+                <input type="number" id="waste-amount" name="amount" placeholder="Enter quantity" required>
+
+                <label for="waste-weight">Weight (in kg):</label>
+                <input type="number" id="waste-weight" name="weight" placeholder="Enter weight" required>
+
+                <label for="waste-image">Upload Image of E-Waste:</label>
+                <input type="file" id="waste-image" name="image" accept="image/*" required>
+                
+                <button type="submit" class="btn-submit">Submit</button>
+            </form>
+
+            <!-- Image Preview Section -->
+            <div id="image-preview">
+                <h3>Image Preview</h3>
+                <img src="" alt="E-Waste Preview" id="preview-img">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 E-Waste Management System. All Rights Reserved.</p>
+        <div class="footer-links">
+            <a href="#privacy">Privacy Policy</a> |
+            <a href="#terms">Terms of Service</a> |
+            <a href="#contact">Contact Us</a>
+        </div>
+    </footer>
+</body>
+</html>
